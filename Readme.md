@@ -1,4 +1,4 @@
-# coleman-liau [![Build Status](https://travis-ci.org/wooorm/coleman-liau.svg?branch=master)](https://travis-ci.org/wooorm/coleman-liau) [![Coverage Status](https://img.shields.io/coveralls/wooorm/coleman-liau.svg)](https://coveralls.io/r/wooorm/coleman-liau?branch=master)
+# coleman-liau [![Build Status](https://img.shields.io/travis/wooorm/coleman-liau.svg?style=flat)](https://travis-ci.org/wooorm/coleman-liau) [![Coverage Status](https://img.shields.io/coveralls/wooorm/coleman-liau.svg?style=flat)](https://coveralls.io/r/wooorm/coleman-liau?branch=master)
 
 Formula to detect the ease of reading a text according to the [Coleman-Liau index](http://en.wikipedia.org/wiki/Coleman–Liau_index).
 
