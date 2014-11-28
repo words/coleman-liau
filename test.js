@@ -56,9 +56,9 @@ describe('colemanLiau()', function () {
          */
 
         roundAssert(colemanLiau({
-            'sentence' : 5,
-            'word' : 119,
-            'letter' : 639
+            'sentence': 5,
+            'word': 119,
+            'letter': 639
         }), 14.53042);
     });
 });
