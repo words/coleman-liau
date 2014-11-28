@@ -10,8 +10,8 @@
     "readability",
     "formula"
   ],
+  "repository": "wooorm/coleman-liau",
   "scripts": [
     "index.js"
-  ],
-  "repository": "wooorm/coleman-liau"
+  ]
 }
