@@ -4,10 +4,15 @@
  * The constants as defined by the revised Coleman-Liau index.
  */
 
-var LETTER_WEIGHT = 0.0588,
-    SENTENCE_WEIGHT = 0.296,
-    BASE = 15.8,
-    PERCENTAGE = 100;
+var LETTER_WEIGHT,
+    SENTENCE_WEIGHT,
+    BASE,
+    PERCENTAGE;
+
+LETTER_WEIGHT = 0.0588;
+SENTENCE_WEIGHT = 0.296;
+BASE = 15.8;
+PERCENTAGE = 100;
 
 /**
  * Get the grade level of a given value according to the Coleman-Liau index.
