@@ -1,14 +1,17 @@
 'use strict';
 
 /**
- * Module dependencies (colemanLiau, assert).
+ * Dependencies.
  */
 
-var colemanLiau = require('./'),
-    assert = require('assert');
+var colemanLiau,
+    assert;
+
+colemanLiau = require('./');
+assert = require('assert');
 
 /**
- * Assert, but up to 6 digits.
+ * Utilities
  */
 
 function roundAssert(a, b) {
@@ -16,7 +19,7 @@ function roundAssert(a, b) {
 }
 
 /**
- * Unit tests.
+ * Tests.
  */
 
 describe('colemanLiau()', function () {
