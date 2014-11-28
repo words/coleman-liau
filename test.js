@@ -4,7 +4,7 @@
  * Module dependencies (colemanLiau, assert).
  */
 
-var colemanLiau = require('..'),
+var colemanLiau = require('./'),
     assert = require('assert');
 
 /**
