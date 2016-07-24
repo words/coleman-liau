@@ -1,13 +1,26 @@
 language: node_js
-script: npm run-script test-travis
+sudo: false
 node_js:
-- '0.10'
 - '0.11'
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+- '0.12'
+- '4.0'
+- '5.0'
+- '6.0'
+after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: bBPvv8DrYnpHi62JnoDRd8EF/c4W0TNT47E7zjqCOKTsqzH+hESeEyvI3YBH5CejCVlhX54upHvjwKjRwlEx72QHR4Bd718NFnF6f0dDX/jBrZsa9kvzQ3xXSaAmtgcgxThGFMQC+stto6IG3GygGCz9k6WlUn+dtlcLe8/+ZVc=
-  on:
-    repo: wooorm/coleman-liau
+  - provider: npm
+    email: tituswormer@gmail.com
+    api_key:
+      secure: g/HZbD1R9+vEtEEdUtL7p/F8Nr5k+jbfcKTkrz4WdBW46vAW1j9G+bQadLtDbOJUuNHg4+GNQogu5NFztM0tcVZdx1JD7d6HmbdomREQlJG8QwWApCzwpS969G0g2uW/GdSEleJ+WfC/u9/+6Jp21ZxDnDosaLIvVPIYxY1ayUo=
+    on:
+      tags: true
+      node: '5.0'
+  - provider: releases
+    api_key:
+      secure: IeXJwcXfeaywDcFJ6hNTHncgnRQopLsZKQ8BmZAx2aM8Pyj2tAG4ICMMmU+/hPeSB6TdueV0gS18rphRnqacuWP2PrjX7bSoww8MjzVTdt5XeOXWUgcRCYdq+te+ahj/yyGdNYZe703dsL51ZMErmuyE7tpnqRhHlgDy2Rllzng=
+    file:
+      - "coleman-liau.js"
+      - "coleman-liau.min.js"
+    on:
+      tags: true
+      node: '6.0'
