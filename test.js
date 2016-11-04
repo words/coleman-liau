@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2014 Titus Wormer
- * @license MIT
- * @module coleman-liau
- * @fileoverview Test suite for `coleman-liau`.
- */
-
 'use strict';
 
 /* Dependencies. */

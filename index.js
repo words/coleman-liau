@@ -1,12 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2014 Titus Wormer
- * @license MIT
- * @module coleman-liau
- * @fileoverview Detect ease of reading according to the
- *   the Coleman-Liau index (1975).
- */
-
 'use strict';
 
 /* Expose. */
