@@ -2,7 +2,6 @@
 *.log
 .nyc_output/
 coverage/
-data/
 node_modules/
 coleman-liau.js
 coleman-liau.min.js
