@@ -2,9 +2,8 @@ language: node_js
 sudo: false
 node_js:
 - '4.0'
-- '5.0'
-- '6.0'
-after_success: bash <(curl -s https://codecov.io/bash)
+- '7.0'
+after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -12,7 +11,7 @@ deploy:
       secure: g/HZbD1R9+vEtEEdUtL7p/F8Nr5k+jbfcKTkrz4WdBW46vAW1j9G+bQadLtDbOJUuNHg4+GNQogu5NFztM0tcVZdx1JD7d6HmbdomREQlJG8QwWApCzwpS969G0g2uW/GdSEleJ+WfC/u9/+6Jp21ZxDnDosaLIvVPIYxY1ayUo=
     on:
       tags: true
-      node: '5.0'
+      node: '4.0'
   - provider: releases
     api_key:
       secure: IeXJwcXfeaywDcFJ6hNTHncgnRQopLsZKQ8BmZAx2aM8Pyj2tAG4ICMMmU+/hPeSB6TdueV0gS18rphRnqacuWP2PrjX7bSoww8MjzVTdt5XeOXWUgcRCYdq+te+ahj/yyGdNYZe703dsL51ZMErmuyE7tpnqRhHlgDy2Rllzng=
@@ -21,4 +20,4 @@ deploy:
       - "coleman-liau.min.js"
     on:
       tags: true
-      node: '6.0'
+      node: '7.0'
