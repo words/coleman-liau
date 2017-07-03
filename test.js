@@ -1,6 +1,5 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var nan = require('is-nan');
 var colemanLiau = require('./');
@@ -9,8 +8,7 @@ var colemanLiau = require('./');
 test('colemanLiau', function (t) {
   t.ok(nan(colemanLiau()), 'NaN when an invalid value is given');
 
-  /**
-   * Existing computer programs that measure readability are based
+  /* Existing computer programs that measure readability are based
    * largely upon subroutines which estimate number of syllables,
    * usually by counting vowels. The shortcoming in estimating
    * syllables is that it necessitates keypunching the prose into
@@ -24,11 +22,7 @@ test('colemanLiau', function (t) {
    * Office of Education to calibrate the readability of all textbooks
    * for the public school system.
    *
-   * Sentences: 5
-   * Words: 119
-   * Syllables: 639
-   */
-
+   * Sentences: 5, words: 119, syllables: 639. */
   t.equal(
     round(colemanLiau({
       sentence: 5,
