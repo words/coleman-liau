@@ -5,7 +5,7 @@ Formula to detect the ease of reading a text according to the
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install coleman-liau
@@ -57,20 +57,20 @@ a document, returns the grade level associated with the document.
 ## Related
 
 *   [`automated-readability`](https://github.com/wooorm/automated-readability)
-    — Uses character count instead of error-prone syllable parser;
+    — Uses character count instead of error-prone syllable parser
 *   [`dale-chall-formula`](https://github.com/wooorm/dale-chall-formula)
-    — Uses a dictionary; suited for higher reading levels;
+    — Uses a dictionary, suited for higher reading levels
 *   [`flesch`](https://github.com/wooorm/flesch)
-    — Uses syllable count;
+    — Uses syllable count
 *   [`flesch-kincaid`](https://github.com/wooorm/flesch-kincaid)
-    — Like `flesch-formula`; returns U.S. grade levels;
+    — Like `flesch-formula`, returns U.S. grade levels
 *   [`gunning-fog`](https://github.com/wooorm/gunning-fog)
-    — Uses syllable count; hard to implement with a computer (needs
-    POS-tagging and Named Entity Recognition);
+    — Uses syllable count, hard to implement with a computer (needs
+    POS-tagging and Named Entity Recognition)
 *   [`smog-formula`](https://github.com/wooorm/smog-formula)
-    — Like `gunning-fog-index`; without needing advanced NLP;
+    — Like `gunning-fog-index`, without needing advanced NLP
 *   [`spache-formula`](https://github.com/wooorm/spache-formula)
-    — Uses a dictionary; suited for lower reading levels.
+    — Uses a dictionary, suited for lower reading levels
 
 ## License
 
@@ -86,7 +86,7 @@ a document, returns the grade level associated with the document.
 
 [codecov]: https://codecov.io/github/wooorm/coleman-liau
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
