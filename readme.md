@@ -78,13 +78,13 @@ a document, returns the grade level associated with the document.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/coleman-liau.svg
+[travis-badge]: https://img.shields.io/travis/words/coleman-liau.svg
 
-[travis]: https://travis-ci.org/wooorm/coleman-liau
+[travis]: https://travis-ci.org/words/coleman-liau
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/coleman-liau.svg
+[codecov-badge]: https://img.shields.io/codecov/c/github/words/coleman-liau.svg
 
-[codecov]: https://codecov.io/github/wooorm/coleman-liau
+[codecov]: https://codecov.io/github/words/coleman-liau
 
 [npm]: https://docs.npmjs.com/cli/install
 

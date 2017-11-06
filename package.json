@@ -10,8 +10,8 @@
     "readability",
     "formula"
   ],
-  "repository": "https://github.com/wooorm/coleman-liau",
-  "bugs": "https://github.com/wooorm/coleman-liau/issues",
+  "repository": "words/coleman-liau",
+  "bugs": "https://github.com/words/coleman-liau/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
