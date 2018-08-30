@@ -5,3 +5,4 @@ coverage/
 node_modules/
 coleman-liau.js
 coleman-liau.min.js
+yarn.lock
