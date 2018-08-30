@@ -1,18 +1,20 @@
-'use strict';
+'use strict'
 
-module.exports = colemanLiau;
+module.exports = colemanLiau
 
-var LETTER_WEIGHT = 0.0588;
-var SENTENCE_WEIGHT = 0.296;
-var BASE = 15.8;
-var PERCENTAGE = 100;
+var letterWeight = 0.0588
+var sentenceWeight = 0.296
+var base = 15.8
+var percentage = 100
 
 function colemanLiau(counts) {
   if (!counts || !counts.sentence || !counts.word || !counts.letter) {
-    return NaN;
+    return NaN
   }
 
-  return (LETTER_WEIGHT * (counts.letter / counts.word * PERCENTAGE)) -
-    (SENTENCE_WEIGHT * (counts.sentence / counts.word * PERCENTAGE)) -
-    BASE;
+  return (
+    letterWeight * ((counts.letter / counts.word) * percentage) -
+    sentenceWeight * ((counts.sentence / counts.word) * percentage) -
+    base
+  )
 }
