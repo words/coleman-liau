@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var nan = require('is-nan');
-var colemanLiau = require('./');
+var colemanLiau = require('.');
 
 /* Tests. */
 test('colemanLiau', function (t) {
