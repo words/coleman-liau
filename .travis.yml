@@ -5,20 +5,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: g/HZbD1R9+vEtEEdUtL7p/F8Nr5k+jbfcKTkrz4WdBW46vAW1j9G+bQadLtDbOJUuNHg4+GNQogu5NFztM0tcVZdx1JD7d6HmbdomREQlJG8QwWApCzwpS969G0g2uW/GdSEleJ+WfC/u9/+6Jp21ZxDnDosaLIvVPIYxY1ayUo=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: IeXJwcXfeaywDcFJ6hNTHncgnRQopLsZKQ8BmZAx2aM8Pyj2tAG4ICMMmU+/hPeSB6TdueV0gS18rphRnqacuWP2PrjX7bSoww8MjzVTdt5XeOXWUgcRCYdq+te+ahj/yyGdNYZe703dsL51ZMErmuyE7tpnqRhHlgDy2Rllzng=
-    file:
-      - "coleman-liau.js"
-      - "coleman-liau.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: IeXJwcXfeaywDcFJ6hNTHncgnRQopLsZKQ8BmZAx2aM8Pyj2tAG4ICMMmU+/hPeSB6TdueV0gS18rphRnqacuWP2PrjX7bSoww8MjzVTdt5XeOXWUgcRCYdq+te+ahj/yyGdNYZe703dsL51ZMErmuyE7tpnqRhHlgDy2Rllzng=
+  file:
+    - "coleman-liau.js"
+    - "coleman-liau.min.js"
+  on:
+    tags: true
+    node: '9.0'
