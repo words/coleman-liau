@@ -4,7 +4,6 @@ var test = require('tape')
 var nan = require('is-nan')
 var colemanLiau = require('.')
 
-/* Tests. */
 test('colemanLiau', function(t) {
   t.ok(nan(colemanLiau()), 'NaN when an invalid value is given')
 
