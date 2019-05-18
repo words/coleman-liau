@@ -5,8 +5,8 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Formula to detect the ease of reading a text according to the
-[Coleman-Liau index][formula].
+Formula to detect the ease of reading a text according to the [Coleman-Liau
+index][formula].
 
 ## Installation
 
@@ -47,9 +47,9 @@ colemanLiau({sentence: 5, word: 119, letter: 639}) // => 14.53042...
 
 ### `colemanLiau(counts)`
 
-Given an object containing the number of words (`word`), the number
-of sentences (`sentence`), and the number of letters  (`letter`) in
-a document, returns the grade level associated with the document.
+Given an object containing the number of words (`word`), the number of sentences
+(`sentence`), and the number of letters  (`letter`) in a document, returns the
+grade level associated with the document.
 
 ## Related
 
