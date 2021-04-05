@@ -10,6 +10,9 @@ index][formula].
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -19,7 +22,7 @@ npm install coleman-liau
 ## Use
 
 ```js
-var colemanLiau = require('coleman-liau')
+import {colemanLiau} from 'coleman-liau'
 
 // For:
 //
@@ -41,6 +44,9 @@ colemanLiau({sentence: 5, word: 119, letter: 639}) // => 14.53042…
 ```
 
 ## API
+
+This package exports the following identifiers: `colemanLiau`.
+There is no default export.
 
 ### `colemanLiau(counts)`
 

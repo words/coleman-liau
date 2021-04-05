@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-coleman-liau.js
-coleman-liau.min.js
 yarn.lock

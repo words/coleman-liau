@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var colemanLiau = require('.')
+import test from 'tape'
+import {colemanLiau} from './index.js'
 
 test('colemanLiau', function (t) {
   t.ok(Number.isNaN(colemanLiau()), 'NaN when an invalid value is given')

@@ -1,13 +1,9 @@
-'use strict'
-
-module.exports = colemanLiau
-
 var letterWeight = 0.0588
 var sentenceWeight = 0.296
 var base = 15.8
 var percentage = 100
 
-function colemanLiau(counts) {
+export function colemanLiau(counts) {
   if (!counts || !counts.sentence || !counts.word || !counts.letter) {
     return Number.NaN
   }
