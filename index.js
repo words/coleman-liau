@@ -9,7 +9,7 @@ var percentage = 100
 
 function colemanLiau(counts) {
   if (!counts || !counts.sentence || !counts.word || !counts.letter) {
-    return NaN
+    return Number.NaN
   }
 
   return (
