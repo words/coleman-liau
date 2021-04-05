@@ -3,6 +3,19 @@ var sentenceWeight = 0.296
 var base = 15.8
 var percentage = 100
 
+/**
+ * @typedef {Object.<string, number>} ColemanLiauCounts
+ * @propert {number} sentence
+ * @propert {number} word
+ * @propert {number} letter
+ */
+
+/**
+ * Given an object containing the number of words (`word`), the number of sentences (`sentence`), and the number of letters  (`letter`) in a document, returns the grade level associated with the document.
+ *
+ * @param {ColemanLiauCounts} counts
+ * @returns {number}
+ */
 export function colemanLiau(counts) {
   if (!counts || !counts.sentence || !counts.word || !counts.letter) {
     return Number.NaN

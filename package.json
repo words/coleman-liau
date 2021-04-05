@@ -23,7 +23,9 @@
   "sideEffects": false,
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "devDependencies": {
@@ -35,10 +37,12 @@
     "xo": "^0.38.0"
   },
   "scripts": {
+    "prepack": "npm run build && npm run format",
+    "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test.js",
     "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov node test.js",
-    "test": "npm run format && npm run test-coverage"
+    "test": "npm run build && npm run format && npm run test-coverage"
   },
   "prettier": {
     "tabWidth": 2,
@@ -59,5 +63,10 @@
     "plugins": [
       "preset-wooorm"
     ]
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "strict": true
   }
 }
