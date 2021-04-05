@@ -72,9 +72,9 @@ grade level associated with the document.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/coleman-liau.svg
+[build-badge]: https://github.com/words/coleman-liau/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/coleman-liau
+[build]: https://github.com/words/coleman-liau/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/words/coleman-liau.svg
 
