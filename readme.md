@@ -138,7 +138,7 @@ It also works in Deno and modern browsers.
     — uses syllable count, hard to implement with a computer (needs
     POS-tagging and Named Entity Recognition)
 *   [`smog-formula`](https://github.com/words/smog-formula)
-    — like `gunning-fog-index`, without needing advanced NLP
+    — like `gunning-fog`, without needing advanced NLP
 *   [`spache-formula`](https://github.com/words/spache-formula)
     — uses a dictionary, suited for lower reading levels
 
