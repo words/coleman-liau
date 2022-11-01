@@ -7,7 +7,7 @@ test('colemanLiau', function (t) {
 
   t.equal(
     round(colemanLiau({sentence: 5, word: 119, letter: 639})),
-    round(14.53042),
+    round(14.530_42),
     'should work'
   )
 

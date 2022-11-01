@@ -1,7 +1,7 @@
-var letterWeight = 0.0588
-var sentenceWeight = 0.296
-var base = 15.8
-var percentage = 100
+const letterWeight = 0.0588
+const sentenceWeight = 0.296
+const base = 15.8
+const percentage = 100
 
 /**
  * @typedef {Object.<string, number>} ColemanLiauCounts
